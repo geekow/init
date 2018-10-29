@@ -1,0 +1,2 @@
+Le service qui permet de lancer des taches a horaires regulieres est cron, pour editer les taches planifier vous pouvez executer crontab -e.
+The service that allow you to plan tasks is cron, to edit the planned tasks you can execute crontab -e.
