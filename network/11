@@ -1,0 +1,17 @@
+Le nom du materiel qui fait le lien entre le reseau local et l'exterieur est : nat-1 l'adresse IP du peripherique est 10.60.1.11. Car c'est une IP local et que la prochaine dans la liste est une IP publique.
+The name of the device that connect the local network to the external network is: nat-1 and the IP is 10.60.1.11. Because the IP correspond to a local network and the next one is a public one.
+
+traceroute: Warning: slash16.org has multiple addresses; using 143.204.222.49
+traceroute to slash16.org (143.204.222.49), 64 hops max, 52 byte packets
+1  10.12.254.254 (10.12.254.254)  2.782 ms  0.842 ms  0.709 ms
+2  nat-1 (10.60.1.11)  0.183 ms  0.174 ms  0.163 ms
+3  dc3 (62.210.35.1)  1.536 ms  1.580 ms  1.777 ms
+4  195.154.1.174 (195.154.1.174)  1.118 ms  1.065 ms  1.041 ms
+5  a9k1-45x-s44-2.dc3.poneytelecom.eu (195.154.1.104)  1.281 ms  1.404 ms  1.222 ms
+6  amazon-th2.par.franceix.net (37.49.236.118)  0.943 ms  0.942 ms  0.942 ms
+7  52.93.16.20 (52.93.16.20)  23.274 ms
+52.93.16.68 (52.93.16.68)  15.728 ms
+52.93.16.52 (52.93.16.52)  17.662 ms
+8  52.93.16.173 (52.93.16.173)  1.867 ms
+52.93.16.165 (52.93.16.165)  1.673 ms
+52.93.16.171 (52.93.16.171)  1.439 ms

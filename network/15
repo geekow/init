@@ -1,0 +1,4 @@
+Rajouter la ligne suivante a la fin du fichier /etc/hosts:
+Add the following line at the end of the /etc/hosts file:
+
+46.19.122.85	intra.42.fr
