@@ -3,10 +3,10 @@ apt-get --assume-yes install mailutils
 echo "md5sum /etc/crontab > /root/newsum \n\
 	if [ -f /root/oldsum ] \n\
 	then \n\
-		    if [ '\$(diff /root/newsum /root/oldsum)' != '' ] \n\
-				        then echo 'The /etc/crontab file has changed, sending email to root' | mail -s 'The crontab file has changed since yesterday' root \n\
-							    fi \n\
-							fi \n\
-							cp /root/newsum /root/oldsum" > ~/script.sh
-chmod +x ~/script.sh
-(crontab -l; echo "0 0 * * * /bin/sh ~/script.sh") | crontab -
+		if [ '\$(diff /root/newsum /root/oldsum)' != '' ] \n\
+		then echo 'The /etc/crontab file has changed, sending email to root' | mail -s 'The crontab file has changed since yesterday' root \n\
+		fi \n\
+	fi \n\
+	cp /root/newsum /root/oldsum" > ~/script.sh
+	chmod +x ~/script.sh
+	(crontab -l; echo "0 0 * * * /bin/sh ~/script.sh") | crontab -

@@ -1,1 +1,1 @@
-pgrep -f 'sshd.*'
+systemctl status sshd.service | grep "Main PID:" | awk '{print $3}'

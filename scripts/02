@@ -1,2 +1,2 @@
 #!/bin/sh
-(crontab -l; echo "0 4 * * 0 apt-get update >> /var/log/update_script.log && apt-get upgrade >> /var/log/update_script.log") | crontab -
+(crontab -l; echo "0 4 * * 0 apt-get --assume-yes update >> /var/log/update_script.log && apt-get --assume-yes upgrade >> /var/log/update_script.log") | crontab -
