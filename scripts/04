@@ -1,6 +1,6 @@
 #!/bin/sh
 apt-get --assume-yes install mailutils
-echo -e "md5sum /etc/crontab > /root/newsum \n\
+echo "md5sum /etc/crontab > /root/newsum \n\
 	if [ -f /root/oldsum ] \n\
 	then \n\
 		if [ '\$(diff /root/newsum /root/oldsum)' != '' ] \n\
